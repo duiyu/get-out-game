@@ -81,7 +81,7 @@ function resetGame() {
 					  		xiaowangSpriteSheetMasked,
 							xiaowangSpriteSheetDead, 3, 48, 96);
 	barrierSpeed = 6;
-	minDistanceBetweenBarriers = 175;
+	minDistanceBetweenBarriers = 200;
 	barriers = [new Police(width, ground.y, policeSprite, barrierSpeed)];
 	
 	dist = 700.0;
@@ -210,7 +210,7 @@ function drawInterface() {
 			dist -= 0.01;
 			distFrame = 0;
 			barrierSpeed = ((800 - dist)/100)**3*6;
-			minDistanceBetweenBarriers = 175 + (barrierSpeed-6)*15;
+			minDistanceBetweenBarriers = 200 + (barrierSpeed-6)*10;
 		}
 	}
 
